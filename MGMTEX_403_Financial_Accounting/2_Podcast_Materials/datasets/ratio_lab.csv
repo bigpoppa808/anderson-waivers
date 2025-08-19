@@ -1,0 +1,15 @@
+Metric,CurrentYear,PriorYear
+Sales,120000,110000
+NetIncome,9500,8200
+TotalAssetsAvg,78000,72000
+TotalEquityAvg,32000,30000
+COGS,72000,68000
+InventoryAvg,21000,20000
+AccountsReceivableAvg,18000,16000
+CurrentAssets,68900,62500
+CurrentLiabilities,41000,38000
+Cash,24500,22000
+InterestExpense,2000,1800
+EBIT,13000,11500
+TotalDebt,36000,34000
+

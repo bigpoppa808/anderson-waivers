@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Problems - Economic Analysis</title>
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.6;
+        }
+        h1 { color: #667eea; }
+        .problem {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .solution {
+            background: #e8f5e9;
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+        }
+        .formula {
+            background: #fff3e0;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem 0;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practice Problems with LaTeX Formulas</h1>
+    
+    <div class="problem">
+        <h2>Elasticity Problem</h2>
+        <p>A theater faces demand $Q_d = 500 - 10P$. Current price is $30.</p>
+        <ul>
+            <li>Calculate elasticity at $P = 30$</li>
+            <li>Should they raise or lower price to increase revenue?</li>
+        </ul>
+        
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p>At $P = 30$: $Q = 500 - 10(30) = 200$</p>
+            <div class="formula">
+                $$E_d = \frac{dQ}{dP} \times \frac{P}{Q} = -10 \times \frac{30}{200} = -1.5$$
+            </div>
+            <p>Since $|E_d| = 1.5 > 1$, demand is elastic.</p>
+            <p><strong>Decision:</strong> Lower price to increase revenue (elastic demand means $\downarrow P \rightarrow \uparrow TR$)</p>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Monopoly Pricing</h2>
+        <p>Monopolist faces: $P = 100 - Q$ with $MC = 20$</p>
+        <p>Find profit-maximizing $P$ and $Q$.</p>
+        
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p>Total Revenue: $TR = P \times Q = (100 - Q)Q = 100Q - Q^2$</p>
+            <div class="formula">
+                $$MR = \frac{dTR}{dQ} = 100 - 2Q$$
+            </div>
+            <p>Set $MR = MC$:</p>
+            <div class="formula">
+                $$100 - 2Q = 20 \Rightarrow Q^* = 40$$
+            </div>
+            <p>Price: $P^* = 100 - 40 = 60$</p>
+            <p>Profit: $\pi = (P - MC) \times Q = (60 - 20) \times 40 = 1600$</p>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Cournot Competition</h2>
+        <p>Two firms face $P = 100 - Q$ where $Q = q_1 + q_2$, with $MC = 10$</p>
+        
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p>Using Cournot formula for symmetric firms:</p>
+            <div class="formula">
+                $$q_i = \frac{a - c}{3b} = \frac{100 - 10}{3 \times 1} = 30$$
+            </div>
+            <p>Total output: $Q = 60$</p>
+            <p>Price: $P = 100 - 60 = 40$</p>
+            <p>Profit per firm: $\pi_i = (40 - 10) \times 30 = 900$</p>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Tax Incidence</h2>
+        <p>Demand: $Q_d = 100 - 2P$</p>
+        <p>Supply: $Q_s = -20 + 3P$</p>
+        <p>Tax: $t = 4$ per unit on sellers</p>
+        
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p><strong>Without tax:</strong> Set $Q_d = Q_s$</p>
+            <div class="formula">
+                $$100 - 2P = -20 + 3P \Rightarrow P^* = 24, Q^* = 52$$
+            </div>
+            
+            <p><strong>With tax:</strong> Supply shifts to $Q_s = -20 + 3(P - 4) = -32 + 3P$</p>
+            <div class="formula">
+                $$100 - 2P = -32 + 3P \Rightarrow P_c = 26.4$$
+            </div>
+            <p>Quantity: $Q = 47.2$</p>
+            <p>Producer receives: $P_s = 26.4 - 4 = 22.4$</p>
+            <p><strong>Burden:</strong> Consumers pay $+2.4$, Producers bear $-1.6$</p>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Game Theory: Nash Equilibrium</h2>
+        <p>Prisoner's Dilemma Payoff Matrix:</p>
+        <table style="margin: 1rem auto; border-collapse: collapse;">
+            <tr>
+                <td></td>
+                <th style="padding: 0.5rem; border: 1px solid #ddd;">Cooperate</th>
+                <th style="padding: 0.5rem; border: 1px solid #ddd;">Defect</th>
+            </tr>
+            <tr>
+                <th style="padding: 0.5rem; border: 1px solid #ddd;">Cooperate</th>
+                <td style="padding: 0.5rem; border: 1px solid #ddd;">(3, 3)</td>
+                <td style="padding: 0.5rem; border: 1px solid #ddd;">(0, 5)</td>
+            </tr>
+            <tr>
+                <th style="padding: 0.5rem; border: 1px solid #ddd;">Defect</th>
+                <td style="padding: 0.5rem; border: 1px solid #ddd;">(5, 0)</td>
+                <td style="padding: 0.5rem; border: 1px solid #ddd;">(1, 1)</td>
+            </tr>
+        </table>
+        
+        <div class="solution">
+            <h3>Solution:</h3>
+            <p>Player 1's best responses:</p>
+            <ul>
+                <li>If Player 2 cooperates: $5 > 3$ → Defect</li>
+                <li>If Player 2 defects: $1 > 0$ → Defect</li>
+            </ul>
+            <p>By symmetry, Player 2 also chooses Defect.</p>
+            <p><strong>Nash Equilibrium:</strong> (Defect, Defect) with payoffs (1, 1)</p>
+            <p>Note: This is inefficient since (3, 3) Pareto dominates (1, 1)</p>
+        </div>
+    </div>
+
+    <div class="problem">
+        <h2>Multiplier Effect</h2>
+        <p>If $MPC = 0.8$ and government spending increases by $\$100$ billion:</p>
+        
+        <div class="solution">
+            <h3>Solution:</h3>
+            <div class="formula">
+                $$\text{Multiplier} = \frac{1}{1 - MPC} = \frac{1}{1 - 0.8} = 5$$
+            </div>
+            <p>Total GDP increase: $\$100B \times 5 = \$500$ billion</p>
+        </div>
+    </div>
+</body>
+</html>

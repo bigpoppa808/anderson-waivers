@@ -1,0 +1,5 @@
+Scenario,FixedCosts,Price,VariableCost,CampaignCost,IncrementalRevenue
+Base,120000,80,50,50000,120000
+Aggressive,200000,60,35,90000,250000
+Premium,80000,150,70,40000,110000
+

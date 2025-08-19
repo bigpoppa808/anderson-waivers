@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGMTEX 405: Economic Analysis for Managers - Study Portal</title>
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            }
+        };
+    </script>
+    
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Prism.js for code highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>MGMTEX 405: Economic Analysis for Managers</h1>
+            <div class="exam-info">
+                <span class="badge">📅 Aug 24, 2025</span>
+                <span class="badge">⏰ 9:30am - 11:00am</span>
+                <span class="badge">📍 In-Person at UCLA Anderson</span>
+                <span class="badge">⏱️ 90 minutes</span>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <button class="nav-btn active" onclick="showSection('crash-notes')">📚 Crash Notes</button>
+            <button class="nav-btn" onclick="showSection('study-guide')">📖 Study Guide</button>
+            <button class="nav-btn" onclick="showSection('practice')">✍️ Practice Problems</button>
+            <button class="nav-btn" onclick="showSection('resources')">🔗 Resources</button>
+        </nav>
+
+        <!-- Audio Player -->
+        <div class="audio-section">
+            <h3>🎧 AI-Generated Study Podcast</h3>
+            <p class="audio-description">Listen to an AI-generated overview of economics concepts while you study or commute.</p>
+            <audio controls class="audio-player">
+                <source src="MGMTEX_405_Economic_Analysis/2_Podcast_Materials/Beyond_Information_Overload__Mastering_Economics_with_AI-Powered_Audio_Summaries_and_Personalized_Le.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="audio-tips">
+                💡 <strong>Tip:</strong> Listen at 1.5x speed to cover material faster. Use NotebookLM to generate more topic-specific podcasts.
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Crash Notes Section -->
+            <section id="crash-notes" class="content-section active">
+                <h2>No-Textbook Crash Notes</h2>
+                <div class="toc-container">
+                    <h3>Quick Navigation</h3>
+                    <ul class="toc">
+                        <li><a href="#micro">1. Core Micro Toolkit</a></li>
+                        <li><a href="#game-theory">2. Game Theory</a></li>
+                        <li><a href="#macro">3. Macro Essentials</a></li>
+                        <li><a href="#quant">4. Common Quant Setups</a></li>
+                        <li><a href="#examples">5. Worked Examples</a></li>
+                        <li><a href="#practice-set">6. Practice Problems</a></li>
+                    </ul>
+                </div>
+                <div id="crash-notes-content" class="markdown-content">
+                    <!-- Content will be loaded here -->
+                </div>
+            </section>
+
+            <!-- Study Guide Section -->
+            <section id="study-guide" class="content-section">
+                <h2>Comprehensive Study Guide</h2>
+                <div id="study-guide-content" class="markdown-content">
+                    <!-- Content will be loaded here -->
+                </div>
+            </section>
+
+
+            <!-- Practice Section -->
+            <section id="practice" class="content-section">
+                <h2>Practice Problems with Solutions</h2>
+                <p style="margin-bottom: 1rem;">All problems include step-by-step solutions with LaTeX formulas properly rendered.</p>
+                <iframe src="practice_problems.html" style="width: 100%; height: 800px; border: none; border-radius: 8px;"></iframe>
+                <div style="margin-top: 1rem; padding: 1rem; background: #f8f9fa; border-radius: 8px;">
+                    <strong>💡 Exam Tip:</strong> Work these problems multiple times until you can solve them in under 5 minutes each. The 90-minute exam will require speed!
+                </div>
+            </section>
+
+            <!-- Resources Section -->
+            <section id="resources" class="content-section">
+                <h2>Additional Resources</h2>
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h3>📚 Textbooks</h3>
+                        <ul>
+                            <li>Managerial Economics by Froeb et al.</li>
+                            <li>Economics for Managers by Farnham</li>
+                            <li>Microeconomics by Pindyck & Rubinfeld</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>🌐 Online Courses</h3>
+                        <ul>
+                            <li><a href="https://www.khanacademy.org/economics-finance-domain" target="_blank">Khan Academy Economics</a></li>
+                            <li><a href="https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2018/" target="_blank">MIT OCW Microeconomics</a></li>
+                            <li><a href="https://mru.org/" target="_blank">Marginal Revolution University</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h3>🧮 Key Formulas</h3>
+                        <ul>
+                            <li>Elasticity: $E_d = \frac{\% \Delta Q}{\% \Delta P}$</li>
+                            <li>Profit Max: $MR = MC$</li>
+                            <li>GDP: $Y = C + I + G + (X - M)$</li>
+                            <li>Multiplier: $\frac{1}{1-MPC}$</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>UCLA Anderson EMBA Class of 2027 | Waiver Exam Preparation</p>
+            <p>Remember to email by <strong>Wednesday, August 20th at noon</strong> to confirm exam attendance</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

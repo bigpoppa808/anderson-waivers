@@ -1,0 +1,20 @@
+Account,Debit,Credit
+Cash,24500,
+Accounts Receivable,18000,
+Inventory,22000,
+Prepaid Insurance,2400,
+Property, Plant & Equipment,60000,
+Accumulated Depreciation,,15000
+Accounts Payable,,14000
+Unearned Revenue,,3000
+Bonds Payable (10%),,20000
+Common Stock,,20000
+Additional Paid-in Capital,,15000
+Retained Earnings (Beg),,22000
+Sales Revenue,,120000
+COGS,72000,
+Salaries Expense,15000,
+Rent Expense,6000,
+Utilities Expense,2000,
+Interest Expense,0,
+

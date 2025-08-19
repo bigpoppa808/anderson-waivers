@@ -1,0 +1,24 @@
+# GitHub Pages Configuration
+theme: null
+title: UCLA Anderson EMBA Waiver Exam - Economic Analysis
+description: Complete study portal for MGMTEX 405 Economic Analysis for Managers waiver exam
+baseurl: /anderson-waivers
+url: https://yourusername.github.io
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+# Include/Exclude
+include:
+  - MGMTEX_405_Economic_Analysis
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "*.md"
+  - "*.m4a"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
