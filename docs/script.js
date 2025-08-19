@@ -343,7 +343,20 @@ document.addEventListener('DOMContentLoaded', async function() {
         
         // Render math after content is loaded
         if (window.MathJax) {
-            MathJax.typesetPromise().catch((e) => console.log(e));
+            // Wait for MathJax to be ready
+            if (window.MathJax.typesetPromise) {
+                MathJax.typesetPromise().catch((e) => console.log('MathJax render error:', e));
+            } else if (window.MathJax.Hub) {
+                // Fallback for MathJax 2
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+            } else {
+                // If MathJax not fully loaded, try again
+                setTimeout(() => {
+                    if (window.MathJax && window.MathJax.typesetPromise) {
+                        MathJax.typesetPromise().catch((e) => console.log('MathJax delayed render error:', e));
+                    }
+                }, 1000);
+            }
         }
     } catch (error) {
         console.error('Error initializing content:', error);
