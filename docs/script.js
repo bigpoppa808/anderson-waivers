@@ -58,8 +58,42 @@ async function loadMarkdownContent(path, targetId) {
         }
         const text = await response.text();
         
-        // Convert markdown to HTML
-        const html = marked.parse(text);
+        // Convert markdown to HTML with LaTeX support
+        let html = marked.parse(text);
+        
+        // Convert common math notation to LaTeX - comprehensive list
+        html = html.replace(/Ed = %ΔQ \/ %ΔP/g, '$E_d = \\frac{\\%\\Delta Q}{\\%\\Delta P}$');
+        html = html.replace(/MUx\/Px = MUy\/Py/g, '$\\frac{MU_x}{P_x} = \\frac{MU_y}{P_y}$');
+        html = html.replace(/MR = MC/g, '$MR = MC$');
+        html = html.replace(/P = MC/g, '$P = MC$');
+        html = html.replace(/P = min ATC/g, '$P = \\min(ATC)$');
+        html = html.replace(/Qd\(P\) = Qs\(P\)/g, '$Q_d(P) = Q_s(P)$');
+        html = html.replace(/\|Ed\|/g, '$|E_d|$');
+        html = html.replace(/Qs − Qd/g, '$Q_s - Q_d$');
+        html = html.replace(/Qs = −(\d+) \+ (\d+)P/g, '$Q_s = -$1 + $2P$');
+        html = html.replace(/Qd = (\d+) − (\d+)P/g, '$Q_d = $1 - $2P$');
+        html = html.replace(/P\* = (\d+)/g, '$P^* = $1$');
+        html = html.replace(/Q\* = (\d+)/g, '$Q^* = $1$');
+        html = html.replace(/qi = \(a − c − bqj\)\/\(2b\)/g, '$q_i = \\frac{a - c - bq_j}{2b}$');
+        html = html.replace(/q1 = q2 = \(a − c\)\/\(3b\)/g, '$q_1 = q_2 = \\frac{a - c}{3b}$');
+        html = html.replace(/P = a − bQ/g, '$P = a - bQ$');
+        html = html.replace(/TR = P·Q/g, '$TR = P \\cdot Q$');
+        html = html.replace(/MR = a − 2bQ/g, '$MR = a - 2bQ$');
+        html = html.replace(/ATC = AFC \+ AVC/g, '$ATC = AFC + AVC$');
+        html = html.replace(/Y = C \+ I \+ G \+ NX/g, '$Y = C + I + G + NX$');
+        html = html.replace(/Y = C \+ I \+ G \+ \(X - M\)/g, '$Y = C + I + G + (X - M)$');
+        html = html.replace(/π = \(P − MC\) × Q/g, '$\\pi = (P - MC) \\times Q$');
+        html = html.replace(/1\/\(1[- ]?MPC\)/g, '$\\frac{1}{1-MPC}$');
+        html = html.replace(/−MPC\/\(1[- ]?MPC\)/g, '$\\frac{-MPC}{1-MPC}$');
+        html = html.replace(/Break-even Q = Fixed Cost \/ \(P − VC\)/g, '$Q_{BE} = \\frac{FC}{P - VC}$');
+        html = html.replace(/P\(Q\) = a − bQ/g, '$P(Q) = a - bQ$');
+        html = html.replace(/Contribution margin per unit = P − VC/g, 'Contribution margin = $P - VC$');
+        html = html.replace(/(\d+) × (\d+)/g, '$$$1 \\times $2$$');
+        html = html.replace(/↑/g, '$\\uparrow$');
+        html = html.replace(/↓/g, '$\\downarrow$');
+        html = html.replace(/→/g, '$\\rightarrow$');
+        html = html.replace(/Exy/g, '$E_{xy}$');
+        html = html.replace(/Ey/g, '$E_y$');
         
         // Insert into page
         const target = document.getElementById(targetId);
@@ -103,20 +137,26 @@ const fallbackContent = {
 ## Part 1: Microeconomics Essentials
 
 ### Supply and Demand
-**Core Concept**: Markets reach equilibrium where Qd = Qs.
+**Core Concept**: Markets reach equilibrium where $Q_d = Q_s$.
 
 **Key Formulas**:
-- Demand: Qd = a - bP
-- Supply: Qs = c + dP
-- Equilibrium: Set Qd = Qs, solve for P*
+- Demand: $Q_d = a - bP$
+- Supply: $Q_s = c + dP$  
+- Equilibrium: Set $Q_d = Q_s$, solve for $P^*$
+- Consumer Surplus: $CS = \\int_{P^*}^{P_{max}} Q_d(P) dP$
+- Producer Surplus: $PS = \\int_{P_{min}}^{P^*} Q_s(P) dP$
 
 ### Elasticity
-**Price Elasticity of Demand**: $E_d = \\frac{\\% \\Delta Q}{\\% \\Delta P}$
+**Price Elasticity of Demand**: $E_d = \\frac{\\% \\Delta Q}{\\% \\Delta P} = \\frac{dQ}{dP} \\times \\frac{P}{Q}$
+
+**Point Elasticity Formula**: $E_d = \\frac{\\partial Q}{\\partial P} \\cdot \\frac{P}{Q}$
 
 **Interpretation**:
-- |Ed| > 1: Elastic (revenue ↓ when P ↑)
-- |Ed| = 1: Unit elastic
-- |Ed| < 1: Inelastic (revenue ↑ when P ↑)
+- $|E_d| > 1$: Elastic (revenue ↓ when P ↑)
+- $|E_d| = 1$: Unit elastic
+- $|E_d| < 1$: Inelastic (revenue ↑ when P ↑)
+
+**Revenue Relationship**: $\\frac{dTR}{dP} = Q(1 + E_d)$
 
 ### Market Structures
 | Structure | Firms | Entry | Product | P vs MC |
