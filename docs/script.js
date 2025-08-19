@@ -101,8 +101,11 @@ async function loadMarkdownContent(path, targetId) {
             target.innerHTML = html;
             
             // Re-render MathJax
-            if (window.MathJax) {
+            if (window.MathJax && window.MathJax.typesetPromise) {
                 MathJax.typesetPromise([target]).catch((e) => console.log(e));
+            } else if (window.MathJax && window.MathJax.Hub) {
+                // Fallback for MathJax 2
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, target]);
             }
             
             // Highlight code blocks
