@@ -1,222 +1,258 @@
-# MGMTEX 405: Economic Analysis for Managers - Study Guide
+# MGMTEX 405: Economic Analysis for Managers - Comprehensive Study Guide
 
-## Exam Information
-- **Date:** Sunday, August 24th, 2025
-- **Time:** 9:30am – 11:00am (1.5 hours)
-- **Format:** In-person at UCLA Anderson
-- **Question Types:** Multiple choice, paragraph-style, short essay, case analysis
+## Course Information
+- **Course**: MGMTEX 405 - Economic Analysis for Managers
+- **Textbook**: Microeconomics by Goolsbee, Levitt & Syverson (3rd Edition)
+- **Professor**: Clemence Tricaud
+- **Exam Date**: Sunday, August 24th, 2025
+- **Time**: 9:30am – 11:00am (90 minutes)
+- **Format**: In-person at UCLA Anderson
+- **Grade Weights**: 30% Midterm, 40% Final, 30% Problem Sets
 
-## Core Topics to Master
+## Important Dates & Deadlines
+- **Waiver Exam Registration**: Email by Wednesday, August 20th at noon
+- **Exam Day**: Sunday, August 24th, 2025 at 9:30am
+- **Location**: UCLA Anderson School of Management
 
-### 1. Microeconomics Fundamentals
-#### Reading Materials
-- **Supply and Demand Analysis**
-  - Market equilibrium
-  - Price elasticity of demand and supply
-  - Consumer and producer surplus
-  - Government interventions (price floors, ceilings, taxes)
+## Module 1: Economic Way of Thinking & Market Equilibrium
 
-- **Consumer Theory**
-  - Utility maximization
-  - Budget constraints
-  - Indifference curves
-  - Income and substitution effects
+### Key Concepts
+- **Scarcity and Choice**: The fundamental economic problem
+- **Opportunity Cost**: Value of the next best alternative foregone
+- **Marginal Analysis**: Making decisions at the margin (MB = MC)
+- **Market Equilibrium**: Where supply meets demand
 
-- **Production and Cost Theory**
-  - Production functions
-  - Short-run vs. long-run costs
-  - Economies of scale and scope
-  - Cost minimization
+### Study Focus
+- Understand how to find equilibrium price and quantity
+- Practice shifting supply and demand curves
+- Calculate consumer and producer surplus
+- Identify sources of deadweight loss
 
-#### Podcast-Friendly Materials
-- Case studies on market dynamics
-- Real-world applications of elasticity
-- Industry analysis examples
+### Practice Problems
+1. Given demand Qd = 100 - 2P and supply Qs = 20 + 3P, find equilibrium
+2. If income increases, how does demand for normal vs inferior goods shift?
+3. Calculate CS and PS for a given equilibrium
 
-### 2. Market Structures
-#### Reading Materials
-- **Perfect Competition**
-  - Characteristics and assumptions
-  - Short-run and long-run equilibrium
-  - Efficiency implications
+## Module 2: Demand Analysis & Consumer Behavior
 
-- **Monopoly**
-  - Sources of monopoly power
-  - Pricing strategies
-  - Deadweight loss
-  - Price discrimination
+### Key Concepts
+- **Price Elasticity of Demand**: Responsiveness of quantity to price changes
+- **Cross-Price Elasticity**: Relationship between goods (substitutes/complements)
+- **Income Elasticity**: Normal vs inferior goods
+- **Consumer Choice Theory**: Utility maximization subject to budget constraint
 
-- **Oligopoly**
-  - Game theory basics
-  - Nash equilibrium
-  - Prisoner's dilemma
-  - Cournot and Bertrand competition
+### Study Focus
+- Master elasticity calculations and interpretations
+- Understand revenue implications of price changes
+- Apply consumer choice theory to real scenarios
 
-- **Monopolistic Competition**
-  - Product differentiation
-  - Brand competition
+### Critical Formulas
+- Ed = (dQ/dP) × (P/Q)
+- Revenue Test: |Ed| > 1 → elastic; |Ed| < 1 → inelastic
+- Optimal consumption: MUx/Px = MUy/Py
 
-#### Podcast-Friendly Materials
-- Business strategy case studies
-- Game theory applications in business
-- Competitive dynamics stories
+## Module 3: Production & Costs
 
-### 3. Macroeconomics for Managers
-#### Reading Materials
-- **National Income Accounting**
-  - GDP components and calculation
-  - Real vs. nominal GDP
-  - Economic growth indicators
+### Key Concepts
+- **Production Function**: Relationship between inputs and outputs
+- **Diminishing Returns**: Eventually declining marginal product
+- **Cost Structure**: Fixed, variable, and marginal costs
+- **Economies of Scale**: Long-run cost advantages
 
-- **Monetary Policy**
-  - Money supply and demand
-  - Federal Reserve tools
-  - Interest rate determination
-  - Inflation and unemployment trade-offs
+### Study Focus
+- Distinguish between short-run and long-run costs
+- Understand relationship between MC, AVC, and ATC
+- Identify optimal production levels
 
-- **Fiscal Policy**
-  - Government spending multipliers
-  - Tax policy effects
-  - Budget deficits and national debt
+### Key Relationships
+- MC intersects AVC and ATC at minimum points
+- ATC = AFC + AVC
+- Long run: all inputs variable
 
-- **International Economics**
-  - Exchange rates
-  - Balance of payments
-  - Trade theory and policy
+## Module 4: Perfect Competition & Welfare Analysis
 
-#### Podcast-Friendly Materials
-- Economic indicator interpretations
-- Central bank decision analysis
-- Global economic trends
+### Key Concepts
+- **Perfect Competition**: Many firms, homogeneous product, price takers
+- **Profit Maximization**: P = MR = MC
+- **Shutdown Decision**: P < AVC → shut down
+- **Long-Run Equilibrium**: Zero economic profit, P = min ATC
 
-### 4. Managerial Decision Making
-#### Reading Materials
-- **Marginal Analysis**
-  - Profit maximization
-  - Cost-benefit analysis
-  - Decision trees
+### Study Focus
+- Determine firm's supply curve
+- Calculate producer and consumer surplus
+- Analyze welfare effects of taxes and price controls
 
-- **Risk and Uncertainty**
-  - Expected value
-  - Risk preferences
-  - Insurance and hedging
+### Welfare Applications
+- Tax incidence depends on relative elasticities
+- DWL from market interventions
+- Efficiency vs equity tradeoffs
 
-- **Information Economics**
-  - Asymmetric information
-  - Moral hazard
-  - Adverse selection
-  - Signaling and screening
+## Module 5: Market Power, Monopoly & Monopolistic Competition
 
-#### Podcast-Friendly Materials
-- Business decision case studies
-- Risk management stories
-- Market failure examples
+### Key Concepts
+- **Monopoly**: Single seller, barriers to entry, MR < P
+- **Profit Maximization**: MR = MC, then find P from demand
+- **Deadweight Loss**: Social cost of monopoly
+- **Monopolistic Competition**: Differentiated products, zero long-run profit
 
-## Recommended Study Resources
+### Study Focus
+- Calculate monopoly price and quantity
+- Compare to competitive outcome
+- Understand sources of market power
 
-### Essential Textbooks (Reading)
-1. **"Managerial Economics" by Froeb, McCann, Ward, and Shor**
-   - Focus on Chapters 1-10 for core concepts
-   - Practice problems at end of each chapter
+### Key Formula
+- Linear demand P = a - bQ → MR = a - 2bQ
+- Lerner Index: (P - MC)/P = -1/Ed
 
-2. **"Microeconomics" by Pindyck and Rubinfeld**
-   - Chapters on consumer theory, production, and market structures
+## Module 6: Advanced Pricing Strategies
 
-3. **"Economics for Managers" by Paul Farnham**
-   - Comprehensive coverage of both micro and macro
+### Key Concepts
+- **Price Discrimination**: First, second, and third degree
+- **Two-Part Tariffs**: Fixed fee + per-unit price
+- **Bundling**: Selling products together
+- **Versioning**: Different quality levels
 
-### Online Resources (Reading)
-1. **Khan Academy Economics**
-   - Free video tutorials and practice problems
-   - https://www.khanacademy.org/economics-finance-domain
+### Study Focus
+- Identify conditions for successful price discrimination
+- Calculate optimal two-part tariff
+- Understand when bundling increases profit
 
-2. **MIT OpenCourseWare**
-   - 14.01 Principles of Microeconomics
-   - 14.02 Principles of Macroeconomics
+### Applications
+- Airlines, software, telecommunications
+- Theme parks, clubs, utilities
+- Microsoft Office, cable packages
 
-3. **Marginal Revolution University**
-   - Free online economics courses
-   - Practice problems and quizzes
+## Module 7: Oligopoly & Game Theory
 
-### Podcast Materials (for NotebookLM)
-1. **Case Study Collections**
-   - Harvard Business Review cases on pricing strategy
-   - Market entry decisions
-   - Competitive dynamics
+### Key Concepts
+- **Strategic Interdependence**: Firms consider rivals' reactions
+- **Cournot Competition**: Quantity competition
+- **Bertrand Competition**: Price competition
+- **Nash Equilibrium**: Mutual best responses
 
-2. **Economic Indicators and Trends**
-   - Federal Reserve economic data (FRED)
-   - Economic forecasting reports
-   - Industry analysis reports
+### Study Focus
+- Solve for Cournot equilibrium quantities
+- Find Nash equilibria in simple games
+- Apply backward induction to sequential games
 
-3. **Business Strategy Applications**
-   - Porter's Five Forces analysis
-   - SWOT analysis examples
-   - Market positioning strategies
+### Key Models
+- Cournot: qi = (a - c)/(3b) for symmetric duopoly
+- Prisoner's Dilemma: Individual vs collective rationality
+- Entry deterrence and credible threats
 
-## Practice Problem Areas
+## Module 8: Market Failures
 
-### Must-Practice Topics
-1. **Elasticity Calculations**
-   - Price elasticity of demand
-   - Cross-price elasticity
-   - Income elasticity
+### Key Concepts
+- **Externalities**: Costs/benefits not reflected in market price
+- **Public Goods**: Non-rival, non-excludable
+- **Asymmetric Information**: Adverse selection, moral hazard
+- **Solutions**: Taxes, subsidies, regulation, property rights
 
-2. **Cost Analysis**
-   - Marginal cost calculations
-   - Break-even analysis
-   - Profit maximization
+### Study Focus
+- Calculate socially optimal output with externalities
+- Understand Coase Theorem applications
+- Identify information problems in markets
 
-3. **Game Theory**
-   - Dominant strategies
-   - Nash equilibrium
-   - Sequential games
-
-4. **Market Equilibrium**
-   - Supply and demand shifts
-   - Welfare analysis
-   - Tax incidence
+### Policy Applications
+- Pigouvian taxes for pollution
+- Insurance market failures
+- Education as positive externality
 
 ## Exam Strategy
 
 ### Time Management (90 minutes)
-- Multiple choice: 30-40 minutes
-- Short essays: 20-30 minutes
-- Case analysis: 20-30 minutes
+- 5 minutes: Read all questions, plan approach
+- 60-70 minutes: Answer problems methodically
+- 10-15 minutes: Review and check work
+- 5 minutes: Final review
 
-### Key Formulas to Memorize
-- Price Elasticity: Ed = (% change in Q) / (% change in P)
-- Profit Maximization: MR = MC
-- GDP: Y = C + I + G + (X - M)
-- Money Multiplier: m = 1 / reserve ratio
+### Problem-Solving Approach
+1. Identify the economic concept being tested
+2. Draw relevant graphs if helpful
+3. Write down the key formula or decision rule
+4. Show all work clearly
+5. Check answer for economic intuition
 
-### Common Exam Topics (Based on MBA Programs)
-1. Market analysis and equilibrium
-2. Pricing strategies
-3. Cost-benefit analysis
-4. Game theory applications
-5. Macroeconomic indicators interpretation
-6. Policy impact analysis
+### Common Pitfalls to Avoid
+- Confusing movements along vs shifts of curves
+- Forgetting to check second-order conditions
+- Missing units in elasticity calculations
+- Confusing short-run vs long-run analysis
 
-## Week-by-Week Study Plan (4 weeks before exam)
+## Study Resources
 
-### Week 1: Microeconomics Fundamentals
-- Review supply/demand, elasticity
-- Practice equilibrium problems
-- Master consumer and producer theory
+### Primary Text
+- Goolsbee, Levitt & Syverson: Microeconomics (3rd Edition)
+- Focus on end-of-chapter problems
+- Review boxed examples and case studies
 
-### Week 2: Market Structures & Game Theory
-- Study all four market structures
-- Practice game theory problems
-- Analyze case studies
+### Supplementary Materials
+- Khan Academy: Microeconomics course
+- MIT OpenCourseWare: 14.01 Principles of Microeconomics
+- Practice problems from previous exams
 
-### Week 3: Macroeconomics & Policy
-- Review GDP, inflation, unemployment
-- Understand monetary and fiscal policy
-- Study international economics
+### Online Tools
+- Desmos graphing calculator for visualizing functions
+- Wolfram Alpha for checking calculations
+- NotebookLM for generating study podcasts
 
-### Week 4: Practice & Review
-- Take practice exams
-- Review weak areas
-- Practice case analysis
-- Time management drills
+## Week-by-Week Study Plan
+
+### Week 1: Foundations (Modules 1-2)
+- Day 1-2: Supply, demand, equilibrium
+- Day 3-4: Elasticity and applications
+- Day 5-6: Consumer choice theory
+- Day 7: Practice problems and review
+
+### Week 2: Firms and Markets (Modules 3-4)
+- Day 1-2: Production and costs
+- Day 3-4: Perfect competition
+- Day 5-6: Welfare analysis
+- Day 7: Practice problems and review
+
+### Week 3: Market Power (Modules 5-6)
+- Day 1-2: Monopoly and monopolistic competition
+- Day 3-4: Price discrimination
+- Day 5-6: Advanced pricing strategies
+- Day 7: Practice problems and review
+
+### Week 4: Strategy and Failures (Modules 7-8)
+- Day 1-2: Oligopoly and game theory
+- Day 3-4: Market failures and externalities
+- Day 5: Comprehensive review
+- Day 6: Practice exam
+- Day 7: Final review and rest
+
+## Key Formulas Summary
+
+### Elasticity
+- Price: Ed = (dQ/dP) × (P/Q)
+- Cross: Exy = (dQx/dPy) × (Py/Qx)
+- Income: Ey = (dQ/dI) × (I/Q)
+
+### Costs
+- TC = FC + VC
+- ATC = TC/Q = AFC + AVC
+- MC = dTC/dQ
+
+### Market Structures
+- Perfect Competition: P = MR = MC
+- Monopoly: MR = MC, P from demand
+- Cournot: qi = (a - c - bqj)/(2b)
+
+### Welfare
+- CS = ∫[P_max to P*] Qd(P) dP
+- PS = ∫[P* to P_min] Qs(P) dP
+- DWL = ½ × tax × ΔQ
+
+## Final Tips
+
+1. **Focus on problem-solving**: The exam is application-heavy
+2. **Know your formulas**: Write them down at the start
+3. **Practice under time pressure**: 90 minutes goes quickly
+4. **Understand intuition**: Don't just memorize
+5. **Rest well**: Get good sleep before the exam
+
+---
+
+Good luck on your waiver exam! Remember: preparation is key to success.

@@ -135,53 +135,89 @@ async function loadMarkdownContent(path, targetId) {
 // Fallback content for local development
 const fallbackContent = {
     crashNotes: `
-# Economic Analysis Crash Notes
+# MGMTEX 405 - Economic Analysis: Crash Notes
 
-## Part 1: Microeconomics Essentials
+**Textbook**: Microeconomics by Goolsbee, Levitt & Syverson (3rd Edition)  
+**Exam Format**: 90 minutes | 30% Midterm, 40% Final, 30% Problem Sets
 
-### Supply and Demand
-**Core Concept**: Markets reach equilibrium where $Q_d = Q_s$.
+## Module 1: Economic Way of Thinking & Market Equilibrium
 
-**Key Formulas**:
-- Demand: $Q_d = a - bP$
-- Supply: $Q_s = c + dP$  
-- Equilibrium: Set $Q_d = Q_s$, solve for $P^*$
+### The Economic Problem
+- Scarcity and choice: unlimited wants vs limited resources
+- Opportunity cost: value of next best alternative
+- Marginal thinking: decisions at the margin (MB = MC)
+
+### Supply & Demand
+- Market equilibrium: $Q_d = Q_s$
+- Demand shifters: income, preferences, substitutes/complements
+- Supply shifters: input costs, technology, regulations
 - Consumer Surplus: $CS = \\int_{P^*}^{P_{max}} Q_d(P) dP$
 - Producer Surplus: $PS = \\int_{P_{min}}^{P^*} Q_s(P) dP$
 
+## Module 2: Demand Analysis & Consumer Behavior
+
 ### Elasticity
-**Price Elasticity of Demand**: $E_d = \\frac{\\% \\Delta Q}{\\% \\Delta P} = \\frac{dQ}{dP} \\times \\frac{P}{Q}$
+**Price Elasticity**: $E_d = \\frac{\\% \\Delta Q}{\\% \\Delta P} = \\frac{dQ}{dP} \\times \\frac{P}{Q}$
 
-**Point Elasticity Formula**: $E_d = \\frac{\\partial Q}{\\partial P} \\cdot \\frac{P}{Q}$
-
-**Interpretation**:
-- $|E_d| > 1$: Elastic (revenue ↓ when P ↑)
+**Revenue Test**:
+- $|E_d| > 1$: Elastic (↓P → ↑Revenue)
 - $|E_d| = 1$: Unit elastic
-- $|E_d| < 1$: Inelastic (revenue ↑ when P ↑)
+- $|E_d| < 1$: Inelastic (↑P → ↑Revenue)
 
-**Revenue Relationship**: $\\frac{dTR}{dP} = Q(1 + E_d)$
+### Consumer Choice
+- Budget constraint: $P_xX + P_yY = Income$
+- Utility maximization: $\\frac{MU_x}{P_x} = \\frac{MU_y}{P_y}$
 
-### Market Structures
-| Structure | Firms | Entry | Product | P vs MC |
-|-----------|-------|-------|---------|---------|
-| Perfect Competition | Many | Easy | Identical | P = MC |
-| Monopoly | One | Blocked | Unique | P >> MC |
-| Oligopoly | Few | Hard | Either | P > MC |
+## Module 3: Production & Costs
 
-## Part 2: Game Theory
+### Cost Structure
+- Total Cost: $TC = FC + VC$
+- Average Total Cost: $ATC = \\frac{TC}{Q} = AFC + AVC$
+- Marginal Cost: $MC = \\frac{dTC}{dQ}$
+- MC intersects AVC and ATC at minimum points
+
+## Module 4: Perfect Competition
+
+### Market Structure
+- Many firms, price takers
+- Profit max: $P = MR = MC$
+- Shutdown: if $P < AVC$
+- Long run: $P = min(ATC)$, zero economic profit
+
+## Module 5: Monopoly
+
+### Monopoly Pricing
+- For linear demand $P = a - bQ$: $MR = a - 2bQ$
+- Profit max: Set $MR = MC$, find Q, then P from demand
+- Lerner Index: $\\frac{P - MC}{P} = -\\frac{1}{E_d}$
+
+## Module 6: Advanced Pricing
+
+### Price Discrimination
+- First-degree: Perfect, charge each consumer max WTP
+- Second-degree: Quantity discounts, versioning
+- Third-degree: Segment-based, higher P for less elastic
+
+## Module 7: Oligopoly & Game Theory
+
+### Cournot Competition
+For duopoly with $P = a - b(q_1 + q_2)$, $MC = c$:
+- Symmetric equilibrium: $q^* = \\frac{a - c}{3b}$
 
 ### Nash Equilibrium
-Each player's strategy is best response to others'.
+Mutual best responses - no unilateral deviation
 
-**Prisoner's Dilemma Example**:
-\`\`\`
-         Cooperate  Defect
-Cooperate  (3,3)    (0,5)
-Defect     (5,0)    (1,1)
-\`\`\`
-Nash Equilibrium: (Defect, Defect)
+## Module 8: Market Failures
 
-## Part 3: Practice Problems
+### Externalities
+- Negative: Social cost > Private cost → Pigouvian tax
+- Positive: Social benefit > Private benefit → Subsidies
+
+### Asymmetric Information
+- Adverse selection: Hidden information
+- Moral hazard: Hidden action
+
+## Practice Problems
 
 ### Problem 1: Elasticity
 If |Ed| = 0.4 and price increases 10%, revenue changes by:
